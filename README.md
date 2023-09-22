@@ -1,8 +1,22 @@
-# React + Vite
+# Componentización en React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ejemplo de una interfaz de usuario construida a partir de componentes React. En este caso, se trata de una página principal a un sitio *web* sobre una aplicación destinada a ayudar a las personas con dificultades a la hora de mantener la atención.
 
-Currently, two official plugins are available:
+## Componentes básicos:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Navbar**: Con diversos enlaces e información del estado de sesión del usuario.
+- **MainContent**: El contenido principal de la aplicación.
+- **Footer**: Con más enlaces y logos de la marca.
+
+## Instalación del proyecto
+
+- Clonar el repositorio
+- Ejecutar el comando
+```bash
+npm run install
+```
+- Ejecutar
+```bash
+npm run dev
+```
+para iniciar la aplicación en el puerto especificado en la línea de comandos. 
