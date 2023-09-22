@@ -1,4 +1,4 @@
-import "../css/Header.css";
+import "../../css/Header.css";
 import { Navbar } from "./navbar/Navbar";
 
 export default function Header({ navLinks }) {
