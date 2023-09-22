@@ -1,4 +1,6 @@
-export function Main() {
+import '../css/MainContent.css';
+
+export function MainContent() {
     return (
         <main>
             <hgroup className="m-large d-flex justify-content-start align-items-center flex-column gap-2 height-full">
@@ -70,7 +72,7 @@ export function Main() {
                             dónde dirigimos nuestra atención.
                         </p>
                         <p className="w-100">
-                            Nuestro
+                            Nuestro{' '}
                             <b>
                                 objetivo es brindarte información y apoyo para
                                 que puedas alcanzar un nivel óptimo de

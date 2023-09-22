@@ -1,9 +1,10 @@
 import { Navbar } from './Navbar'
+import "../css/Header.css";
 
-export default function Header() {
+export default function Header({ navLinks }) {
     return (
         <header>
-            <Navbar />
+            <Navbar navLinks={navLinks} />
         </header>
     )
 }

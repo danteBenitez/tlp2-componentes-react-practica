@@ -1,6 +1,7 @@
 import { SignInButton } from './SignInButton'
 
-export function Navbar() {
+
+export function Navbar({ navLinks }) {
     return (
         <nav className="nav-custom sticky-top">
             <a href="#" className="enlace me-auto">
@@ -16,13 +17,31 @@ export function Navbar() {
                 />
             </a>
             <ul className="d-flex flex-row pt-4">
-                <li>
-                    <a href="#" className="text-decoration-none navbar-link">
-                        Contacto
-                    </a>
-                </li>
+                <NavbarLinkList linkList={navLinks} />
                 <SignInButton />
             </ul>
         </nav>
+    )
+}
+
+export function NavbarLinkList({ linkList }) {
+    return (
+        <>
+            {linkList.map(({ text, url }, i) => {
+                return <NavbarLink linkText={text} url={url} key={i} />
+            })}
+        </>
+    )
+}
+
+export function NavbarLink({ linkText, url }) {
+    return (
+        <>
+            <li>
+                <a href={url} className="text-decoration-none navbar-link">
+                    {linkText}
+                </a>
+            </li>
+        </>
     )
 }
